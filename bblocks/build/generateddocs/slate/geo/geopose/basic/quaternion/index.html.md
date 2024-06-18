@@ -80,12 +80,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2FGeoPose%2Fbblocks%2Fbblocks%2Fbuild%2Fannotated%2Fgeo%2Fgeopose%2Fbasic%2Fquaternion%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fogcincubator.github.io%2FGeoPose%2Fbblocks%2Fbuild%2Fannotated%2Fgeo%2Fgeopose%2Fbasic%2Fquaternion%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml" target="_blank">https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml</a>
-* JSON version: <a href="https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json" target="_blank">https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json</a>
+* YAML version: <a href="https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml" target="_blank">https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml</a>
+* JSON version: <a href="https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json" target="_blank">https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json</a>
 
 
 # JSON-LD Context
@@ -102,10 +102,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2FGeoPose%2Fbblocks%2Fbblocks%2Fbuild%2Fannotated%2Fgeo%2Fgeopose%2Fbasic%2Fquaternion%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fogcincubator.github.io%2FGeoPose%2Fbblocks%2Fbuild%2Fannotated%2Fgeo%2Fgeopose%2Fbasic%2Fquaternion%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld" target="_blank">https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld</a>
+<a href="https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld" target="_blank">https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld</a>
 
 # References
 

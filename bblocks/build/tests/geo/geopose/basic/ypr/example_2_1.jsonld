@@ -9,5 +9,5 @@
     "pitch": -0.4381464123477409,
     "roll": 0.0
   },
-  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
 }

@@ -51,7 +51,7 @@
       "x-jsonld-id": "http://example.com/geopose/position",
       "allOf": [
         {
-          "$ref": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema-oas3.0.json#/definitions/Position"
+          "$ref": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema-oas3.0.json#/definitions/Position"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "x-jsonld-id": "http://example.com/geopose/quaternion",
       "allOf": [
         {
-          "$ref": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema-oas3.0.json#/definitions/Quaternion"
+          "$ref": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema-oas3.0.json#/definitions/Quaternion"
         }
       ]
     }

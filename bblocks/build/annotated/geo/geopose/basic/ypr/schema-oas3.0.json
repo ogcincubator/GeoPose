@@ -47,7 +47,7 @@
       "x-jsonld-id": "http://example.com/geopose/position",
       "allOf": [
         {
-          "$ref": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/schema-oas3.0.json#/definitions/Position"
+          "$ref": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema-oas3.0.json#/definitions/Position"
         }
       ]
     },
@@ -55,7 +55,7 @@
       "x-jsonld-id": "http://example.com/geopose/angles",
       "allOf": [
         {
-          "$ref": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/schema-oas3.0.json#/definitions/angles"
+          "$ref": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema-oas3.0.json#/definitions/angles"
         }
       ]
     }

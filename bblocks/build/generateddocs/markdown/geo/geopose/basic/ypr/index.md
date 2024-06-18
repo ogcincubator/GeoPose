@@ -57,7 +57,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
     "pitch": -0.43610515937237904,
     "roll": 0.0
   },
-  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
 }
 ```
 
@@ -103,7 +103,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
     "pitch": -0.4381464123477409,
     "roll": 0.0
   },
-  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
 }
 ```
 
@@ -149,7 +149,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
     "pitch": -0.4401787262476278,
     "roll": 0.0
   },
-  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
 }
 ```
 
@@ -195,7 +195,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
     "pitch": -0.44220204512692407,
     "roll": 0.0
   },
-  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld"
 }
 ```
 
@@ -259,8 +259,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml)
 
 
 # JSON-LD Context
@@ -278,7 +278,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld)
 
 ## Sources
 

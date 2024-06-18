@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://ogcincubator.github.io/GeoPose/bblocks"
+      "@base": "https://ogcincubator.github.io/GeoPose"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -104,7 +104,7 @@
     }
   ],
   "name": "Building Blocks - GeoPose Building Blocks",
-  "modified": "2024-06-18T13:42:15.973149",
+  "modified": "2024-06-18T13:50:41.498633",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"1891afa8bd0e985b0cf324aa24b94600f2dda422",
@@ -114,9 +114,9 @@
   },
   "gitRepository": "https://github.com/ogcincubator/GeoPose",
   "gitHubRepository": "https://github.com/ogcincubator/GeoPose/blob/main/",
-  "baseURL": "https://ogcincubator.github.io/GeoPose/bblocks/",
-  "viewerURL": "https://ogcincubator.github.io/GeoPose/bblocks/",
-  "validationReport": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/tests/report.html",
+  "baseURL": "https://ogcincubator.github.io/GeoPose/",
+  "viewerURL": "https://ogcincubator.github.io/GeoPose/",
+  "validationReport": "https://ogcincubator.github.io/GeoPose/bblocks/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
@@ -145,32 +145,32 @@
       "maturity": "proposal",
       "scope": "geo",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/advanced/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/advanced/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/advanced/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/advanced/schema.json"
       },
       "group": "GeoPose",
       "shaclRules": {},
-      "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/advanced/context.jsonld",
+      "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/advanced/context.jsonld",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Advanced.Schema.json",
-      "sourceLdContext": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/_sources/advanced/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/_sources/advanced/",
+      "sourceLdContext": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/advanced/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/advanced/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/markdown/geo/geopose/advanced/index.md"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/markdown/geo/geopose/advanced/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/json-full/geo/geopose/advanced/index.json"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/json-full/geo/geopose/advanced/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/slate-build/geo/geopose/advanced/"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/slate-build/geo/geopose/advanced/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.advanced"
+          "url": "https://ogcincubator.github.io/GeoPose/bblock/ogc.geo.geopose.advanced"
         }
       },
       "@type": [
@@ -198,32 +198,32 @@
       "maturity": "proposal",
       "scope": "geo",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json"
       },
       "group": "GeoPose",
       "shaclRules": {},
-      "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld",
+      "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.Quaternion.Schema.json",
-      "sourceLdContext": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/_sources/basic/quaternion/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/_sources/basic/quaternion/",
+      "sourceLdContext": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/quaternion/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/quaternion/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/json-full/geo/geopose/basic/quaternion/index.json"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/json-full/geo/geopose/basic/quaternion/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/slate-build/geo/geopose/basic/quaternion/"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/slate-build/geo/geopose/basic/quaternion/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.basic.quaternion"
+          "url": "https://ogcincubator.github.io/GeoPose/bblock/ogc.geo.geopose.basic.quaternion"
         }
       },
       "@type": [
@@ -251,33 +251,33 @@
       "maturity": "proposal",
       "scope": "geo",
       "schema": {
-        "application/yaml": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml",
-        "application/json": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.json"
       },
       "group": "GeoPose",
       "shaclRules": {},
-      "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+      "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json",
-      "sourceLdContext": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/_sources/basic/ypr/context.jsonld",
-      "sourceFiles": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/_sources/basic/ypr/",
+      "sourceLdContext": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/ypr/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/ypr/",
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/GeoPose/blob/main/bblocks/build/tests/geo/geopose/basic/ypr/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/slate-build/geo/geopose/basic/ypr/"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/slate-build/geo/geopose/basic/ypr/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.basic.ypr"
+          "url": "https://ogcincubator.github.io/GeoPose/bblock/ogc.geo.geopose.basic.ypr"
         }
       },
       "@type": [

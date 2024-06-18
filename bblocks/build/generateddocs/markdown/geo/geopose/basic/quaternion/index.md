@@ -60,8 +60,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml)
 
 
 # JSON-LD Context
@@ -79,7 +79,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld)
 
 ## Sources
 
