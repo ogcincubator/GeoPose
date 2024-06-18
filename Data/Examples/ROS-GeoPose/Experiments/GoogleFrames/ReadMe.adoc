@@ -1,3 +1,0 @@
-## Google StreetView Frames
-
-These are the frames generated from playing the AV GeoPose timeseries.

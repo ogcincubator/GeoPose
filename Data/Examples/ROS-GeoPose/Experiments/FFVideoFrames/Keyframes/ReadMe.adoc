@@ -1,3 +1,0 @@
-## Undistorted, Cropped, Geolocated Frames from Forward Facing Video
-
-The 1,043 frames are split in two folders work around the GitHub max allowed 1,000 files per folder.

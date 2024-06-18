@@ -1,3 +1,0 @@
-# GeoPose Examples for the Eight Standardization Targets
-
-This folder contains examples from the GeoPose 1.0 standard. 

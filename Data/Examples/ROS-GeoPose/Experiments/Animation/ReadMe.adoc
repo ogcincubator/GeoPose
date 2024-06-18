@@ -1,3 +1,0 @@
-## Animation of OS AV.
-
-Using the GeoPose series and the model as input.

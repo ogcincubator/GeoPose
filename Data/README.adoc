@@ -1,9 +1,0 @@
-# GeoPose Sample Data
-
-This folder contains schemata and datasets conforming to the current state of the GeoPose 1.0 standard. It is not very organized yet, but will be soon.
-
-## Examples
-This folder has one or more examples of every JSON object defined in the GeoPose 1.0 draft standard.
-
-## Schemata
-This folder has a JSON-Schema definition for every JSON object defined in the GeoPose 1.0 draft standard.
