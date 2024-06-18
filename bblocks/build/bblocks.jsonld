@@ -104,7 +104,9 @@
     }
   ],
   "name": "Building Blocks - GeoPose Building Blocks",
-  "modified": "2024-06-18T14:56:15.965919",
+  "abstract": "Building blocks for GeoPose model implementations.\n",
+  "description": "Provides and validates examples for the normative GeoPose implementation schemas.\n",
+  "modified": "2024-06-18T15:04:04.607045",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"6badef16348eb4c240d1a1e4389d783ba62b56b9",
