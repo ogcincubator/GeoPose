@@ -29,8 +29,8 @@ Basic GeoPose using yaw, pitch, and roll to specify orientation
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/ogcincubator/GeoPose/blob/main/bblocks/build/tests/geo/geopose/basic/ypr/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/ogcincubator/GeoPose/blob/main/bblocks/build/tests/geo/geopose/basic/ypr/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -107,10 +107,16 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 
 
 ```turtle
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geopose: <http://example.com/geopose/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] geopose:angles [ ] ;
-    geopose:position [ ] .
+[] geopose:angles [ geopose:pitch -4.361052e-01 ;
+            geopose:roll 0e+00 ;
+            geopose:yaw 5.514457e+00 ] ;
+    geopose:position [ geopose:h 1.15e+01 ;
+            geo1:lat 4.77e+01 ;
+            geo1:long -1.223e+02 ] .
 
 
 ```
@@ -177,10 +183,16 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 
 
 ```turtle
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geopose: <http://example.com/geopose/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] geopose:angles [ ] ;
-    geopose:position [ ] .
+[] geopose:angles [ geopose:pitch -4.381464e-01 ;
+            geopose:roll 0e+00 ;
+            geopose:yaw 5.518671e+00 ] ;
+    geopose:position [ geopose:h 1.15e+01 ;
+            geo1:lat 4.77e+01 ;
+            geo1:long -1.223e+02 ] .
 
 
 ```
@@ -247,10 +259,16 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 
 
 ```turtle
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geopose: <http://example.com/geopose/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] geopose:angles [ ] ;
-    geopose:position [ ] .
+[] geopose:angles [ geopose:pitch -4.401787e-01 ;
+            geopose:roll 0e+00 ;
+            geopose:yaw 5.522895e+00 ] ;
+    geopose:position [ geopose:h 1.15e+01 ;
+            geo1:lat 4.77e+01 ;
+            geo1:long -1.223e+02 ] .
 
 
 ```
@@ -317,10 +335,16 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 
 
 ```turtle
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geopose: <http://example.com/geopose/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] geopose:angles [ ] ;
-    geopose:position [ ] .
+[] geopose:angles [ geopose:pitch -4.42202e-01 ;
+            geopose:roll 0e+00 ;
+            geopose:yaw 5.527128e+00 ] ;
+    geopose:position [ geopose:h 1.15e+01 ;
+            geo1:lat 4.77e+01 ;
+            geo1:long -1.223e+02 ] .
 
 
 ```
@@ -335,45 +359,21 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 # JSON Schema
 
 ```yaml--schema
-description: 'Basic-YPR: Basic GeoPose using yaw, pitch, and roll to specify orientation'
-definitions:
-  angles:
-    type: object
-    properties:
-      yaw:
-        type: number
-      pitch:
-        type: number
-      roll:
-        type: number
-    required:
-    - yaw
-    - pitch
-    - roll
-  Position:
-    type: object
-    properties:
-      lat:
-        type: number
-      lon:
-        type: number
-      h:
-        type: number
-    required:
-    - lat
-    - lon
-    - h
-type: object
-properties:
+allOf:
+- $ref: https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml
+x-jsonld-extra-terms:
   position:
-    $ref: '#/definitions/Position'
     x-jsonld-id: http://example.com/geopose/position
+    x-jsonld-context:
+      lat: http://www.w3.org/2003/01/geo/wgs84_pos#lat
+      lon: http://www.w3.org/2003/01/geo/wgs84_pos#long
+      h: http://example.com/geopose/h
   angles:
-    $ref: '#/definitions/angles'
     x-jsonld-id: http://example.com/geopose/angles
-required:
-- position
-- angles
+    x-jsonld-context:
+      yaw: http://example.com/geopose/yaw
+      pitch: http://example.com/geopose/pitch
+      roll: http://example.com/geopose/roll
 x-jsonld-prefixes:
   geopose: http://example.com/geopose/
   geo: http://www.w3.org/2003/01/geo/wgs84_pos#
@@ -393,8 +393,22 @@ Links to the schema:
 ```json--ldContext
 {
   "@context": {
-    "position": "geopose:position",
-    "angles": "geopose:angles",
+    "position": {
+      "@id": "geopose:position",
+      "@context": {
+        "lat": "geo:lat",
+        "lon": "geo:long",
+        "h": "geopose:h"
+      }
+    },
+    "angles": {
+      "@id": "geopose:angles",
+      "@context": {
+        "yaw": "geopose:yaw",
+        "pitch": "geopose:pitch",
+        "roll": "geopose:roll"
+      }
+    },
     "geopose": "http://example.com/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1

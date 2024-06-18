@@ -18,17 +18,17 @@
   ],
   "maturity": "proposal",
   "scope": "geo",
+  "group": "GeoPose",
+  "shaclRules": {},
+  "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml",
     "application/json": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.json"
   },
-  "group": "GeoPose",
-  "shaclRules": {},
-  "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
-  "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json",
+  "sourceSchema": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/ypr/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/ypr/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/ypr/",
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/ogcincubator/GeoPose/blob/main/bblocks/build/tests/geo/geopose/basic/ypr/",
   "description": "GeoPose 1.0 is an OGC Implementation Standard for exchanging the location and orientation of real or virtual geometric\nobjects (\u201cPoses\u201d) within reference frames anchored to the earth\u2019s surface (\u201cGeo\u201d) or within other astronomical\ncoordinate systems.\n\nThe Basic-YPR Target has a simple structure with no options. Position is specified as a point in an LTP-ENU frame and\nrotation is specified by yaw, pitch, and roll angles specified in decimal degrees.\n\nThe Basic_YPR.position attribute shall represent the outer frame, specified by an implicit WGS-84 CRS and an implicit\nEPSG 4461-CS (LTP-ENU) coordinate system and explicit parameters to define the tangent point.\n\nThe Basic_YPR.angles attribute shall represent the inner frame, which is a rotation-only transformation with Yaw, Pitch,\nand Roll (YPR) angles, which expressed as three consecutive rotations of a reference frame oriented East-North-Up (ENU)\ncoordinate system (where the coordinate axes East, North, and Up correspond to the axes X, Y, Z) about the local (\nrotated) axes z, y, and x, applied in that order, corresponding to the conventional Yaw, Pitch, and Roll angles. The\nunit of measure SHALL be the degree and the angles represented as signed real number values.",
   "examples": [
@@ -46,7 +46,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geopose: <http://example.com/geopose/> .\n\n[] geopose:angles [ ] ;\n    geopose:position [ ] .\n\n",
+          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] geopose:angles [ geopose:pitch -4.361052e-01 ;\n            geopose:roll 0e+00 ;\n            geopose:yaw 5.514457e+00 ] ;\n    geopose:position [ geopose:h 1.15e+01 ;\n            geo1:lat 4.77e+01 ;\n            geo1:long -1.223e+02 ] .\n\n",
           "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/tests/geo/geopose/basic/ypr/example_1_1.ttl"
         }
       ]
@@ -65,7 +65,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geopose: <http://example.com/geopose/> .\n\n[] geopose:angles [ ] ;\n    geopose:position [ ] .\n\n",
+          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] geopose:angles [ geopose:pitch -4.381464e-01 ;\n            geopose:roll 0e+00 ;\n            geopose:yaw 5.518671e+00 ] ;\n    geopose:position [ geopose:h 1.15e+01 ;\n            geo1:lat 4.77e+01 ;\n            geo1:long -1.223e+02 ] .\n\n",
           "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/tests/geo/geopose/basic/ypr/example_2_1.ttl"
         }
       ]
@@ -84,7 +84,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geopose: <http://example.com/geopose/> .\n\n[] geopose:angles [ ] ;\n    geopose:position [ ] .\n\n",
+          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] geopose:angles [ geopose:pitch -4.401787e-01 ;\n            geopose:roll 0e+00 ;\n            geopose:yaw 5.522895e+00 ] ;\n    geopose:position [ geopose:h 1.15e+01 ;\n            geo1:lat 4.77e+01 ;\n            geo1:long -1.223e+02 ] .\n\n",
           "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/tests/geo/geopose/basic/ypr/example_3_1.ttl"
         }
       ]
@@ -103,13 +103,13 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix geopose: <http://example.com/geopose/> .\n\n[] geopose:angles [ ] ;\n    geopose:position [ ] .\n\n",
+          "code": "@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix geopose: <http://example.com/geopose/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] geopose:angles [ geopose:pitch -4.42202e-01 ;\n            geopose:roll 0e+00 ;\n            geopose:yaw 5.527128e+00 ] ;\n    geopose:position [ geopose:h 1.15e+01 ;\n            geo1:lat 4.77e+01 ;\n            geo1:long -1.223e+02 ] .\n\n",
           "url": "https://ogcincubator.github.io/GeoPose/bblocks/build/tests/geo/geopose/basic/ypr/example_4_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "description: 'Basic-YPR: Basic GeoPose using yaw, pitch, and roll to specify orientation'\ndefinitions:\n  angles:\n    type: object\n    properties:\n      yaw:\n        type: number\n      pitch:\n        type: number\n      roll:\n        type: number\n    required:\n    - yaw\n    - pitch\n    - roll\n  Position:\n    type: object\n    properties:\n      lat:\n        type: number\n      lon:\n        type: number\n      h:\n        type: number\n    required:\n    - lat\n    - lon\n    - h\ntype: object\nproperties:\n  position:\n    $ref: '#/definitions/Position'\n    x-jsonld-id: http://example.com/geopose/position\n  angles:\n    $ref: '#/definitions/angles'\n    x-jsonld-id: http://example.com/geopose/angles\nrequired:\n- position\n- angles\nx-jsonld-prefixes:\n  geopose: http://example.com/geopose/\n  geo: http://www.w3.org/2003/01/geo/wgs84_pos#\n",
+  "annotatedSchema": "allOf:\n- $ref: https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml\nx-jsonld-extra-terms:\n  position:\n    x-jsonld-id: http://example.com/geopose/position\n    x-jsonld-context:\n      lat: http://www.w3.org/2003/01/geo/wgs84_pos#lat\n      lon: http://www.w3.org/2003/01/geo/wgs84_pos#long\n      h: http://example.com/geopose/h\n  angles:\n    x-jsonld-id: http://example.com/geopose/angles\n    x-jsonld-context:\n      yaw: http://example.com/geopose/yaw\n      pitch: http://example.com/geopose/pitch\n      roll: http://example.com/geopose/roll\nx-jsonld-prefixes:\n  geopose: http://example.com/geopose/\n  geo: http://www.w3.org/2003/01/geo/wgs84_pos#\n",
   "gitRepository": "https://github.com/ogcincubator/GeoPose",
   "gitPath": "bblocks/_sources/basic/ypr"
 }

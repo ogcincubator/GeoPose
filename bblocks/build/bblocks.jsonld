@@ -104,7 +104,7 @@
     }
   ],
   "name": "Building Blocks - GeoPose Building Blocks",
-  "modified": "2024-06-18T14:19:33.963969",
+  "modified": "2024-06-18T14:38:37.239021",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"1891afa8bd0e985b0cf324aa24b94600f2dda422",
@@ -250,17 +250,17 @@
       ],
       "maturity": "proposal",
       "scope": "geo",
+      "group": "GeoPose",
+      "shaclRules": {},
+      "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
       "schema": {
         "application/yaml": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml",
         "application/json": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/schema.json"
       },
-      "group": "GeoPose",
-      "shaclRules": {},
-      "ldContext": "https://ogcincubator.github.io/GeoPose/bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
-      "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json",
+      "sourceSchema": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/ypr/schema.yaml",
       "sourceLdContext": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/ypr/context.jsonld",
       "sourceFiles": "https://ogcincubator.github.io/GeoPose/bblocks/_sources/basic/ypr/",
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/GeoPose/blob/main/bblocks/build/tests/geo/geopose/basic/ypr/",
       "documentation": {
         "markdown": {

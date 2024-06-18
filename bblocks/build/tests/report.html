@@ -51,9 +51,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-06-18T14:19:35.907072+00:00</small>
-                <p class="summary fw-semibold text-success">
-                    Number of passing building blocks: 3 / 3 (100%)
+            <small class="datetime">Generated at 2024-06-18T14:38:38.909030+00:00</small>
+                <p class="summary fw-semibold text-danger">
+                    Number of passing building blocks: 2 / 3 (66.67%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -106,7 +106,7 @@
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geo.geopose.basic.ypr" id="bblock-ogc.geo.geopose.basic.ypr">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button"
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geo\.geopose\.basic\.ypr">
                                     <div class="flex-fill">
@@ -114,17 +114,2023 @@
                                         <small class="ms-2 bblock-id">ogc.geo.geopose.basic.ypr</small>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (100% passed)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geo.geopose.basic.ypr">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geo.geopose.basic.ypr">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 4 / 4
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 4
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-unknown">Traceback (most recent call last):
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 533, in validate_inner
+    validate_json(json_doc, schema_validator)
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 944, in validate_json
+    error = jsonschema.exceptions.best_match(validator.iter_errors(instance))
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/exceptions.py&quot;, line 384, in best_match
+    best = next(errors, None)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 298, in ref
+    yield from validator.descend(instance, resolved)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
+    for error in errors:
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 362, in allOf
+    yield from validator.descend(instance, subschema, schema_path=index)
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 305, in descend
+    for error in self.evolve(schema=schema).iter_errors(instance):
+,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 238, in evolve
+    schema = changes.setdefault(&quot;schema&quot;, self.schema)
+,RecursionError: maximum recursion depth exceeded while calling a Python object
+,
+During handling of the above exception, another exception occurred:
+
+,Traceback (most recent call last):
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 657, in _validate_resource
+    validate_inner()
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 553, in validate_inner
+    &#x27;errorMessage&#x27;: e.message,
+,AttributeError: &#x27;RecursionError&#x27; object has no attribute &#x27;message&#x27;
+</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
@@ -138,18 +2144,17 @@
                                                     <a href="geo/geopose/basic/ypr/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,18 +2172,17 @@
                                                     <a href="geo/geopose/basic/ypr/example_2_1.json" target="_blank">example_2_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_2_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_2_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_2_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -196,18 +2200,17 @@
                                                     <a href="geo/geopose/basic/ypr/example_3_1.json" target="_blank">example_3_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_3_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_3_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_3_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -225,18 +2228,17 @@
                                                     <a href="geo/geopose/basic/ypr/example_4_1.json" target="_blank">example_4_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_4_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_4_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_4_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
                                             </div>
