@@ -1,0 +1,5 @@
+@prefix geopose: <http://example.com/geopose/> .
+
+[] geopose:angles [ ] ;
+    geopose:position [ ] .
+

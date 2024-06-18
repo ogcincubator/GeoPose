@@ -1,0 +1,48 @@
+x-defs: {}
+description: 'Basic-Quaternion: Basic GeoPose using quaternion to specify orientation'
+definitions:
+  Position:
+    type: object
+    properties:
+      lat:
+        type: number
+      lon:
+        type: number
+      h:
+        type: number
+    required:
+    - lat
+    - lon
+    - h
+  Quaternion:
+    type: object
+    properties:
+      x:
+        type: number
+      y:
+        type: number
+      z:
+        type: number
+      w:
+        type: number
+    required:
+    - x
+    - y
+    - z
+    - w
+type: object
+properties:
+  position:
+    x-jsonld-id: http://example.com/geopose/position
+    allOf:
+    - $ref: https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema-oas3.0.yaml#/definitions/Position
+  quaternion:
+    x-jsonld-id: http://example.com/geopose/quaternion
+    allOf:
+    - $ref: https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/annotated/geo/geopose/basic/quaternion/schema-oas3.0.yaml#/definitions/Quaternion
+required:
+- position
+- quaternion
+x-jsonld-prefixes:
+  geopose: http://example.com/geopose/
+  geo: http://www.w3.org/2003/01/geo/wgs84_pos#

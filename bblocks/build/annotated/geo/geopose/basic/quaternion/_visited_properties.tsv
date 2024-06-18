@@ -1,0 +1,10 @@
+path	@id
+/position	http://example.com/geopose/position
+/position/lat	
+/position/lon	
+/position/h	
+/quaternion	http://example.com/geopose/quaternion
+/quaternion/x	
+/quaternion/y	
+/quaternion/z	
+/quaternion/w	

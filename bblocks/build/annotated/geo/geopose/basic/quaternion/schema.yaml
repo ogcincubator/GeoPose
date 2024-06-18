@@ -1,0 +1,45 @@
+description: 'Basic-Quaternion: Basic GeoPose using quaternion to specify orientation'
+definitions:
+  Position:
+    type: object
+    properties:
+      lat:
+        type: number
+      lon:
+        type: number
+      h:
+        type: number
+    required:
+    - lat
+    - lon
+    - h
+  Quaternion:
+    type: object
+    properties:
+      x:
+        type: number
+      y:
+        type: number
+      z:
+        type: number
+      w:
+        type: number
+    required:
+    - x
+    - y
+    - z
+    - w
+type: object
+properties:
+  position:
+    $ref: '#/definitions/Position'
+    x-jsonld-id: http://example.com/geopose/position
+  quaternion:
+    $ref: '#/definitions/Quaternion'
+    x-jsonld-id: http://example.com/geopose/quaternion
+required:
+- position
+- quaternion
+x-jsonld-prefixes:
+  geopose: http://example.com/geopose/
+  geo: http://www.w3.org/2003/01/geo/wgs84_pos#

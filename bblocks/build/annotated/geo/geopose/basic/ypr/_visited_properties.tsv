@@ -1,0 +1,9 @@
+path	@id
+/position	http://example.com/geopose/position
+/position/lat	
+/position/lon	
+/position/h	
+/angles	http://example.com/geopose/angles
+/angles/yaw	
+/angles/pitch	
+/angles/roll	

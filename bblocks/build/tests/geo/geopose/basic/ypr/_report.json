@@ -1,0 +1,335 @@
+{
+  "title": "Validation report for ogc.geo.geopose.basic.ypr - GeoPose Basic-YPR",
+  "bblockName": "GeoPose Basic-YPR",
+  "bblockId": "ogc.geo.geopose.basic.ypr",
+  "generated": "2024-06-18T13:21:31.471267+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "bblocks/build/tests/geo/geopose/basic/ypr/example_1_1.json",
+        "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/tests/geo/geopose/basic/ypr/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "bblocks/build/tests/geo/geopose/basic/ypr/example_2_1.json",
+        "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/tests/geo/geopose/basic/ypr/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_2_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_2_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_2_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "bblocks/build/tests/geo/geopose/basic/ypr/example_3_1.json",
+        "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/tests/geo/geopose/basic/ypr/example_3_1.json",
+        "exampleIndex": 3,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_3_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_3_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_3_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_3_1.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle example_3_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "bblocks/build/tests/geo/geopose/basic/ypr/example_4_1.json",
+        "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/tests/geo/geopose/basic/ypr/example_4_1.json",
+        "exampleIndex": 4,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_4_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_4_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_4_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_4_1.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle example_4_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0
+  }
+}
