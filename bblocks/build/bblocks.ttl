@@ -38,14 +38,14 @@
     rdfs:label "GeoPose Basic-Quaternion" ;
     dct:abstract "Basic GeoPose using quaternion to specify orientation" ;
     dct:created "2023-07-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/slate-build/geo/geopose/basic/quaternion/" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/json-full/geo/geopose/basic/quaternion/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblock/ogc.geo.geopose.basic.quaternion" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/markdown/geo/geopose/basic/quaternion/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblock/ogc.geo.geopose.basic.quaternion" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/slate-build/geo/geopose/basic/quaternion/" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-06-18"^^xsd:date ;
     dct:source <https://docs.ogc.org/dis/21-056r10/21-056r10.html> ;
@@ -65,10 +65,10 @@
     dct:created "2023-03-15T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/slate-build/geo/geopose/basic/ypr/" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/build/generateddocs/slate-build/geo/geopose/basic/ypr/" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblock/ogc.geo.geopose.basic.ypr" ] ;
     dct:hasVersion "0.1" ;
@@ -92,18 +92,18 @@
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-06-18T14:38:38.981164"^^xsd:dateTime ;
-    prov:startedAtTime "2024-06-18T14:38:38.911769"^^xsd:dateTime ;
+    prov:endedAtTime "2024-06-18T14:56:18.890625"^^xsd:dateTime ;
+    prov:startedAtTime "2024-06-18T14:56:18.830797"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:dfb3034699798ebbe9514fb63c128f3924338475" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/GeoPose/bblocks/build/register.json> ] ;
+            dct:hasVersion "git:0eff7067a42af267c286e05282fea3a9bfc7cfc4" ;
+            rdfs:seeAlso <https://ogcincubator.github.io/GeoPose/bblocks/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.45" ;
+            dct:hasVersion "0.3.46" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 
