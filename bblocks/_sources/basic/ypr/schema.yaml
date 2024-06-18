@@ -1,0 +1,2 @@
+allOf:
+  - $ref: https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json
