@@ -23,6 +23,5 @@ jobs:
       annotated_path: bblocks/build/annotated
       config_file: bblocks/bblocks-config.yaml
       test_outputs_path: bblocks/build/tests
-      viewer_path: ./bblocks/
     #   sparql_username: sparql
     #   sparql_password: Secr3T
