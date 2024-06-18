@@ -1,11 +1,11 @@
 {
   "name": "GeoPose Building Blocks",
-  "modified": "2024-06-18T13:24:28.894356",
+  "modified": "2024-06-18T13:42:15.973149",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"86d544ee272c5495ae35236b0871ada235e29d6e",
-      "shortCommitId": "\"86d544",
-      "date": "2024-06-17T19:35:23+00:00\""
+      "commitId": "\"1891afa8bd0e985b0cf324aa24b94600f2dda422",
+      "shortCommitId": "\"1891af",
+      "date": "2024-06-18T13:37:44+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/GeoPose",
