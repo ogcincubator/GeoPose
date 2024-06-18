@@ -104,7 +104,7 @@
     }
   ],
   "name": "Building Blocks - GeoPose Building Blocks",
-  "modified": "2024-06-18T13:21:29.445808",
+  "modified": "2024-06-18T13:24:28.894356",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"86d544ee272c5495ae35236b0871ada235e29d6e",
@@ -115,7 +115,7 @@
   "gitRepository": "https://github.com/ogcincubator/GeoPose",
   "gitHubRepository": "https://github.com/ogcincubator/GeoPose/blob/main/",
   "baseURL": "https://ogcincubator.github.io/GeoPose/bblocks/",
-  "viewerURL": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/",
+  "viewerURL": "https://ogcincubator.github.io/GeoPose/bblocks/",
   "validationReport": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
@@ -170,7 +170,7 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/bblock/ogc.geo.geopose.advanced"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.advanced"
         }
       },
       "@type": [
@@ -223,7 +223,7 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/bblock/ogc.geo.geopose.basic.quaternion"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.basic.quaternion"
         }
       },
       "@type": [
@@ -277,7 +277,7 @@
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/bblock/ogc.geo.geopose.basic.ypr"
+          "url": "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.basic.ypr"
         }
       },
       "@type": [

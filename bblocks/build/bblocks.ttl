@@ -15,12 +15,12 @@
     dct:created "2023-07-13T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/slate-build/geo/geopose/advanced/" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/bblock/ogc.geo.geopose.advanced" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/markdown/geo/geopose/advanced/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/json-full/geo/geopose/advanced/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/json-full/geo/geopose/advanced/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.advanced" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-06-18"^^xsd:date ;
     dct:source <https://docs.ogc.org/dis/21-056r10/21-056r10.html> ;
@@ -43,7 +43,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/slate-build/geo/geopose/basic/quaternion/" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/bblock/ogc.geo.geopose.basic.quaternion" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.basic.quaternion" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/json-full/geo/geopose/basic/quaternion/index.json" ] ;
     dct:hasVersion "0.1" ;
@@ -63,14 +63,14 @@
     rdfs:label "GeoPose Basic-YPR" ;
     dct:abstract "Basic GeoPose using yaw, pitch, and roll to specify orientation" ;
     dct:created "2023-03-15T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md" ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/slate-build/geo/geopose/basic/ypr/" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/bblock/ogc.geo.geopose.basic.ypr" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblock/ogc.geo.geopose.basic.ypr" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-06-18"^^xsd:date ;
     dct:source <https://docs.ogc.org/dis/21-056r10/21-056r10.html> ;
@@ -92,11 +92,11 @@
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-06-18T13:21:31.543943"^^xsd:dateTime ;
-    prov:startedAtTime "2024-06-18T13:21:31.484607"^^xsd:dateTime ;
+    prov:endedAtTime "2024-06-18T13:24:31.143506"^^xsd:dateTime ;
+    prov:startedAtTime "2024-06-18T13:24:31.083420"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:916ad7b0ee9b6ebaf55f6781cc562f59cad980df" ;
+            dct:hasVersion "git:4faf9245cd76e17bad2ff618eaab86d82a50e67c" ;
             rdfs:seeAlso <https://ogcincubator.github.io/GeoPose/bblocks/bblocks/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
